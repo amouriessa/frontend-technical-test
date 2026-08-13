@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: #111111;
+  scrollbar-width: none;
+  font-family: "Inter";
+}
+
+#hero {
+  min-height: 140vh;
+  width: 1440px;
+  background-image: url("/images/bg_section_hero.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+#navbar {
+  position: absolute;
+  top: 48px;
+  left: 96px;
+  width: 1250px;
+  height: 134px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 426px 1fr;
+  font-size: 12px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-left: 2px solid #ffffff;
+}
+
+.nav-top {
+  display: grid;
+  grid-template-columns: 155px 247px 198px 154px 66px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav-bottom {
+  display: grid;
+  grid-template-columns: 290px 206px 133px 191px;
+}
+
+.nav-top a:not(:last-child),
+.nav-bottom a:not(:last-child) {
+  border-right: 2px solid #ffffff;
+}
+
+.nav-top a,
+.nav-bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  font-family: "Unbounded";
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  gap: 5px;
+}
+
+.brand img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.brand-subtitle {
+  font-family: "Unbounded";
+  font-size: 10px;
+  font-weight: 600;
+  margin-right: 8px;
+  margin-left: 45px;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-intro {
+  position: absolute;
+  top: 405px;
+  left: 96px;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.hero-year {
+  font-family: "Unbounded";
+  font-size: 27px;
+  font-weight: 250;
+}
+
+.hero-greeting {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.hero-main {
+  position: absolute;
+  top: 504px;
+  left: 96px;
+  display: flex;
+  align-items: flex-end;
+  gap: 60px;
+  font-family: "Unbounded";
+  color: #ffffff;
+}
+
+.hero-main h1 {
+  margin: 0;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.hero-tagline {
+  position: absolute;
+  top: 588px;
+  left: 432px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: "Unbounded";
+  color: #ffffff;
+}
+
+.hero-description {
+  position: absolute;
+  left: 1104px;
+  top: 510px;
+  bottom: 70px;
+  width: 300px;
+}
+
+.hero-description img {
+  width: 29px;
+  height: 29px;
+  margin-bottom: 15px;
+}
+
+.hero-description-text {
+  position: absolute;
+  margin: 0;
+  font-size: 18px;
+  line-height: 125%;
+  top: 552px;
+  left: 1104px;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    91.17deg,
+    #C6F1F7 -4.01%,
+    #F983E9 36.14%,
+    #B877FF 77.44%,
+    #C2E9CD 106.11%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
