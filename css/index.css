@@ -15,7 +15,7 @@ body {
 #hero {
   min-height: 140vh;
   width: 1440px;
-  background-image: url("/images/bg_section_hero.jpg");
+  background-image: url("../images/bg_section_hero.jpg");
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
