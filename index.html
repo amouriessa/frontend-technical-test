@@ -36,10 +36,13 @@
         <div class="nav-item brand">
           <img src="./images/logo.png" alt="logo" />
           <span>Influenzailla</span>
-          <span class="brand-subtitle"
-            >bespoke design and marketing services</span
-          >
+
+          <span class="brand-subtitle">
+            bespoke design and marketing services
+          </span>
         </div>
+
+        <button class="mobile-menu-toggle" type="button">MENU</button>
 
         <div class="nav-menu">
           <div class="nav-top">
@@ -47,8 +50,9 @@
             <a href="#">SERVICES</a>
             <a href="#">CASES</a>
             <a href="#">TEAM</a>
-            <a href="#" class="nav-icon">
-              <img src="./images/ico_web.png" alt="" />
+
+            <a href="#" class="nav-icon" aria-label="Website">
+              <img src="./images/ico_web.png" alt="ico_web" />
             </a>
           </div>
 
@@ -60,75 +64,111 @@
           </div>
         </div>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+          <div class="mobile-menu-header">
+            <div class="brand">
+              <img src="./images/logo.png" alt="logo" />
+              <span>Influenzailla</span>
+            </div>
+
+            <button class="mobile-menu-close" type="button">Close</button>
+          </div>
+
+          <nav class="mobile-menu-links">
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CASES</a>
+            <a href="#">TEAM</a>
+            <a href="#">BOOST PROGRAM</a>
+            <a href="#">PRODUCTS</a>
+            <a href="#">BOOK</a>
+            <a href="#">BLOG</a>
+
+            <a href="#" aria-label="Website">
+              <img src="./images/ico_web.png" alt="ico_web" />
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
       <div class="hero-content">
         <div class="hero-intro">
-          <span class="hero-year gradient-text">2023</span>
+          <span class="hero-year gradient-text"> 2023 </span>
+
+          <div class="hero-greeting gradient-text">
+            <span>hi there, let's</span>
+            <span>get started!</span>
+          </div>
         </div>
 
-        <div class="hero-greeting gradient-text">
-          <span>hi there, let's</span>
-          <span>get started!</span>
-        </div>
+        <span class="hero-decoration gradient-text"> ˜˜˜˜˜˜˜˜˜ </span>
 
-        <span class="hero-decoration gradient-text">˜˜˜˜˜˜˜˜˜˜</span>
         <div class="hero-main">
           <h1 class="gradient-text">
             Influence your<br />
             audience
           </h1>
         </div>
+
         <p class="hero-tagline">
           boost your brand with our<br />
           marketing expertise
         </p>
 
         <div class="hero-description">
-          <img src="./images/ico_star.png" alt="" />
-        </div>
+          <img src="./images/ico_star.png" alt="ico_star" />
 
-        <p class="hero-description-text gradient-text">
-          We believe in the power of<br />
-          digital media to transform<br />
-          businesses and connect them<br />
-          with their audiences in<br />
-          meaningful ways.
-        </p>
+          <p class="hero-description-text gradient-text">
+            We believe in the power of<br />
+            digital media to transform<br />
+            businesses and connect them<br />
+            with their audiences in<br />
+            meaningful ways.
+          </p>
+        </div>
       </div>
 
+      <!-- Bottom Hero -->
       <div class="hero-content-bottom">
-        <a
-          href="#about"
-          class="bottom-item gradient-text"
-          data-track="about_us"
-        >
-          <span>About us</span>
-        </a>
+        <div class="bottom-grid">
+          <a
+            href="#about"
+            class="bottom-item gradient-text"
+            data-track="about_us"
+          >
+            <span>About us</span>
+          </a>
 
-        <a
-          href="#expertise"
-          class="bottom-item gradient-text"
-          data-track="expertise"
-        >
-          <span>Expertise</span>
-        </a>
+          <a
+            href="#expertise"
+            class="bottom-item gradient-text"
+            data-track="expertise"
+          >
+            <span>Expertise</span>
+          </a>
 
-        <a
-          href="#get-started"
-          class="bottom-item gradient-text"
-          data-track="get_started"
-        >
-          <span>Get started</span>
-        </a>
+          <a
+            href="#get-started"
+            class="bottom-item gradient-text"
+            data-track="get_started"
+          >
+            <span>Get started</span>
+          </a>
 
-        <a
-          href="#what-we-do"
-          class="bottom-item gradient-text"
-          data-track="what_we_do"
-        >
-          <span>What we do</span>
-        </a>
+          <a
+            href="#what-we-do"
+            class="bottom-item gradient-text"
+            data-track="what_we_do"
+          >
+            <span>What we do</span>
+          </a>
+        </div>
       </div>
     </section>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
