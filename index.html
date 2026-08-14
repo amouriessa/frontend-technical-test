@@ -2,11 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bagas Saras Budi Prastika</title>
     <link rel="stylesheet" href="css/index.css" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M3GP7WKB");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3GP7WKB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <section id="hero">
       <nav id="navbar">
         <div class="nav-item brand">
@@ -23,7 +47,9 @@
             <a href="#">SERVICES</a>
             <a href="#">CASES</a>
             <a href="#">TEAM</a>
-            <a href="#">W</a>
+            <a href="#" class="nav-icon">
+              <img src="./images/ico_web.png" alt="" />
+            </a>
           </div>
 
           <div class="nav-bottom">
@@ -37,13 +63,14 @@
       <div class="hero-content">
         <div class="hero-intro">
           <span class="hero-year gradient-text">2023</span>
-
-          <div class="hero-greeting gradient-text">
-            <span>hi there, let's</span>
-            <span>get started!</span>
-          </div>
         </div>
 
+        <div class="hero-greeting gradient-text">
+          <span>hi there, let's</span>
+          <span>get started!</span>
+        </div>
+
+        <span class="hero-decoration gradient-text">˜˜˜˜˜˜˜˜˜˜</span>
         <div class="hero-main">
           <h1 class="gradient-text">
             Influence your<br />
@@ -51,21 +78,55 @@
           </h1>
         </div>
         <p class="hero-tagline">
-            boost your brand with our<br />
-            marketing expertise
-          </p>
+          boost your brand with our<br />
+          marketing expertise
+        </p>
 
         <div class="hero-description">
           <img src="./images/ico_star.png" alt="" />
         </div>
 
         <p class="hero-description-text gradient-text">
-            We believe in the power of<br />
-            digital media to transform<br />
-            businesses and connect them<br />
-            with their audiences in<br />
-            meaningful ways.
-          </p>
+          We believe in the power of<br />
+          digital media to transform<br />
+          businesses and connect them<br />
+          with their audiences in<br />
+          meaningful ways.
+        </p>
+      </div>
+
+      <div class="hero-content-bottom">
+        <a
+          href="#about"
+          class="bottom-item gradient-text"
+          data-track="about_us"
+        >
+          <span>About us</span>
+        </a>
+
+        <a
+          href="#expertise"
+          class="bottom-item gradient-text"
+          data-track="expertise"
+        >
+          <span>Expertise</span>
+        </a>
+
+        <a
+          href="#get-started"
+          class="bottom-item gradient-text"
+          data-track="get_started"
+        >
+          <span>Get started</span>
+        </a>
+
+        <a
+          href="#what-we-do"
+          class="bottom-item gradient-text"
+          data-track="what_we_do"
+        >
+          <span>What we do</span>
+        </a>
       </div>
     </section>
     <script src="index.js"></script>
