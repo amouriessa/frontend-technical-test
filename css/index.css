@@ -505,6 +505,50 @@ body {
   display: none;
 }
 
+#about-list {
+  width: 100%;
+
+  padding: 60px 0;
+
+  background: #111111;
+}
+
+.about-list-container {
+  display: flex;
+  flex-direction: column;
+
+  width: calc(100% - 40px);
+  max-width: 335px;
+
+  margin: 0 auto;
+}
+
+.about-list-item {
+  width: 100%;
+  aspect-ratio: 624.5 / 288;
+
+  background-image: url("../images/about_list.jpg");
+  background-repeat: no-repeat;
+
+  background-size: 200% 200%;
+}
+
+.about-list-item-1 {
+  background-position: left top;
+}
+
+.about-list-item-2 {
+  background-position: right top;
+}
+
+.about-list-item-3 {
+  background-position: left bottom;
+}
+
+.about-list-item-4 {
+  background-position: right bottom;
+}
+
 /* =======
    PC VIEW
    ======= */
@@ -914,5 +958,33 @@ body {
     height: 100%;
 
     object-fit: contain;
+  }
+
+  #about-list {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 0;
+
+    background: #111111;
+  }
+
+  .about-list-container {
+    display: block;
+
+    width: calc(100% - 190px);
+    max-width: 1249px;
+    aspect-ratio: 1249 / 576;
+
+    margin: 0 auto;
+
+    background-image: url("../images/about_list.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .about-list-item {
+    display: none;
   }
 }
