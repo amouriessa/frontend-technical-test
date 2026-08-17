@@ -381,7 +381,128 @@ body {
   width: 100%;
   min-height: 100vh;
 
+  padding: 80px 0;
+
   background: #111111;
+}
+
+.about-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  width: calc(100% - 40px);
+  max-width: 335px;
+
+  margin: 0 auto;
+}
+
+.about-stars {
+  display: flex;
+  order: 1;
+
+  margin-bottom: 40px;
+
+  gap: 0;
+}
+
+.about-stars img {
+  display: block;
+
+  width: 29px;
+  height: 29px;
+
+  object-fit: contain;
+}
+
+.about-intro {
+  order: 2;
+
+  width: 100%;
+
+  margin-bottom: 32px;
+
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.about-intro p {
+  margin: 0;
+}
+
+.about-intro p + p {
+  margin-top: 14px;
+}
+
+.about-location {
+  display: block;
+  order: 3;
+
+  margin-bottom: 28px;
+
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-title {
+  order: 4;
+  width: 280px;
+
+  margin-bottom: 40px;
+}
+
+.about-title h2 {
+  margin: 0;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.about-decoration-mobile {
+  display: block;
+
+  margin-top: 3px;
+  margin-left: 80px;
+
+  font-family: "Unbounded", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.2em;
+}
+
+.about-decoration-desktop {
+  display: none;
+}
+
+.about-description {
+  order: 5;
+
+  width: 100%;
+
+  margin-bottom: 40px;
+
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.about-description p {
+  margin: 0;
+}
+
+.about-description p + p {
+  margin-top: 14px;
+}
+
+.about-illu {
+  display: none;
 }
 
 /* =======
@@ -640,5 +761,158 @@ body {
   a:hover,
   button:hover {
     opacity: 0.5;
+  }
+
+  #about {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 0;
+
+    background: #111111;
+  }
+
+  .about-container {
+    display: block;
+    position: relative;
+
+    width: 1250px;
+    max-width: calc(100% - 69px - 121px);
+    height: 467px;
+
+    margin-left: 69px;
+  }
+
+  .about-location {
+    position: absolute;
+    top: 170px;
+    left: 0;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  /* Intro text */
+
+  .about-intro {
+    position: absolute;
+    top: 95px;
+    left: 335px;
+
+    width: 445px;
+
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: normal;
+    color: #ffffff;
+  }
+
+  .about-intro p {
+    margin: 0;
+  }
+
+  .about-intro p + p {
+    margin-top: 14px;
+  }
+
+  /* Main title */
+
+  .about-title {
+    position: absolute;
+    top: 225px;
+    left: 0;
+
+    width: 760px;
+  }
+
+  .about-title h2 {
+    margin: 0;
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 3.375rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .about-decoration-desktop {
+    display: block;
+
+    margin-top: 5px;
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -9.6px;
+  }
+
+  .about-decoration-mobile {
+    display: none;
+  }
+
+  /* Description */
+
+  .about-description {
+    position: absolute;
+    top: 420px;
+    left: 335px;
+
+    width: 430px;
+
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  .about-description p {
+    margin: 0;
+  }
+
+  .about-description p + p {
+    margin-top: 14px;
+  }
+
+  /* Stars */
+
+  .about-stars {
+    display: flex;
+    position: absolute;
+    top: 525px;
+    left: 0;
+
+    gap: 0;
+  }
+
+  .about-stars img {
+    display: block;
+
+    width: 29px;
+    height: 29px;
+
+    object-fit: contain;
+  }
+
+  /* Illustration */
+
+  .about-illu {
+    display: block;
+    position: absolute;
+    top: 270px;
+    right: 0;
+    bottom: 0;
+
+    width: 241px;
+    height: 276px;
+  }
+
+  .about-illu img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
   }
 }
